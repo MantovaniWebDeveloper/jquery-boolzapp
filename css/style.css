@@ -197,11 +197,20 @@ main #rispBox {
   align-items: center;
   height: 10vh;
   width: 100%;
-  background-color: green;
+  background-color: rgb(226, 226, 226);
+}
+main #rispBox span {
+  color: grey;
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 main #rispBox input {
   width: 80%;
   height: 40px;
   border-radius: 50px;
   border: 1px solid #fff;
+  padding-left: 10px;
+  font-size: 15px;
 }
