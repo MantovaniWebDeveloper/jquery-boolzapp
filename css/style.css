@@ -34,7 +34,6 @@ header #headerLeft {
   margin-left: 10px;
   border-radius: 100px;
   cursor: pointer;
-
 }
 header #headerLeft #headerWrapperIcone {
   height: 100%;
@@ -136,10 +135,38 @@ aside #wrapLastChatBox {
 aside #wrapLastChatBox .chatBox {
   display: flex;
   padding: 10px;
-  background-color: yellow;
+  background-color: #fff;
   height: auto;
   width: 100%;
   border-bottom : 1px solid lightgrey;
+}
+aside .imgChatUser {
+  width: 20%;
+}
+aside .infoChat {
+  margin-top: 15px;
+  width: 60%;
+}
+aside .infoChat h2 {
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #000;
+}
+aside .infoChat p{
+  color: grey;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+aside .orarioChat {
+  margin-top: 10px;
+  width: 20%;
+}
+.imgChatUser img {
+  height: 60px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 100px;
+  cursor: pointer;
 }
 main {
   width: 70%;
