@@ -8,8 +8,9 @@ inputElemento.keypress(function(e) {
       console.log(messagioRecuperato);
       //recupero il nodo per il messaggio inviato
       // e lo clono
+      $('.messaggioInviato').css('display','block');
       var messIniviatoClone = $('.wrapMessInviato .messaggioInviato').clone();
-      
+
       console.log(messIniviatoClone);
       //gli allego il messaggio recuperato dal utento
       messIniviatoClone.text(messagioRecuperato);
