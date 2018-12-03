@@ -192,7 +192,16 @@ main #zonaChat {
   background-color: blue;
 }
 main #rispBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 10vh;
   width: 100%;
   background-color: green;
+}
+main #rispBox input {
+  width: 80%;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #fff;
 }
