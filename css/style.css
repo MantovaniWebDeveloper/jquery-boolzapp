@@ -28,6 +28,12 @@ header #headerLeft #headerImgProfilo{
   height: 100%;
   width: 30%;
 }
+#headerImgProfilo img {
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 100px;
+}
 header #headerLeft #headerWrapperIcone{
   background-color: grey;
   height: 100%;
