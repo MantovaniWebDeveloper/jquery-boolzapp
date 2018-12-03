@@ -219,6 +219,7 @@ main #rispBox input {
   justify-content: flex-end;
 }
 .messaggioInviato {
+  display: none;
   background-color: rgb(102, 227, 43);
   color: #000;
   font-size: 12px;
