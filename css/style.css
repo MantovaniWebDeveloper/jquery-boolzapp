@@ -217,7 +217,6 @@ main #rispBox input {
 .wrapMessInviato {
   display: flex;
   justify-content: flex-end;
-  background-color: yellow;
 }
 .messaggioInviato {
   background-color: rgb(102, 227, 43);
@@ -233,7 +232,6 @@ main #rispBox input {
 .wrapMessRicevuto {
   display: flex;
   justify-content: flex-start;
-  background-color: red;
 }
 .messaggioRicevuto {
   background-color: #fff;
