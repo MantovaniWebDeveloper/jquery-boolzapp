@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: Helvetica Neue;
 }
-.containerGenerale {
+#containerGenerale {
   width: 100%;
   background-color: yellow;
   height: 100vh;
@@ -18,10 +18,20 @@ header > div {
   float: left;
 }
 header #headerLeft {
+  display: flex;
   background-color: orange;
   height: 100%;
   width: 40%;
-
+}
+header #headerLeft #headerImgProfilo{
+  background-color: pink;
+  height: 100%;
+  width: 30%;
+}
+header #headerLeft #headerWrapperIcone{
+  background-color: grey;
+  height: 100%;
+  width: 70%;
 }
 header #headerRight {
   background-color: green;
