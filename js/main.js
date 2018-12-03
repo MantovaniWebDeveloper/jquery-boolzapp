@@ -3,6 +3,7 @@ $(document).keypress(function(e) {
     if(e.which == 13) {
       //  alert('sono vivo');
       //recupero il valore da input box scrivi messaggio
-      var input = $('#rispBox input').value;
+      var input = $('#rispInput').val();
+      console.log(input);
     }
 });
