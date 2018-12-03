@@ -19,12 +19,12 @@ header > div {
 }
 header #headerLeft {
   display: flex;
-  background-color: orange;
+  background-color: rgb(226, 226, 226);
+  border-right: 1px solid lightgrey;
   height: 100%;
-  width: 40%;
+  width: 30%;
 }
 header #headerLeft #headerImgProfilo{
-  background-color: pink;
   height: 100%;
   width: 30%;
 }
@@ -35,12 +35,22 @@ header #headerLeft #headerImgProfilo{
   border-radius: 100px;
 }
 header #headerLeft #headerWrapperIcone{
-  background-color: grey;
   height: 100%;
   width: 70%;
+}
+#headerWrapperIcone {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5px;
+}
+.spanWrap span{
+  font-size: 18px;
+  margin-right: 15px;
+  color: grey;
 }
 header #headerRight {
   background-color: green;
   height: 100%;
-  width: 60%;
+  width: 70%;
 }
