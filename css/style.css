@@ -189,7 +189,7 @@ main {
 main #zonaChat {
   height: 82vh;
   width: 100%;
-  background-color: blue;
+  background-color: lightgrey;
 }
 main #rispBox {
   display: flex;
@@ -213,4 +213,19 @@ main #rispBox input {
   border: 1px solid #fff;
   padding-left: 10px;
   font-size: 15px;
+}
+.wrapMessInviato {
+  background-color: red;
+}
+.messaggioInviato {
+  background-color: rgb(102, 227, 43);
+  color: #000;
+  font-size: 12px;
+  float: right;
+  width: 40%;
+  height: auto;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 10px;
 }
