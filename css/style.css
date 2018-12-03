@@ -11,7 +11,7 @@
 }
 header {
   background-color: red;
-  height: 60px;
+  height: 8vh;
   width: 100%;
 }
 header > div {
@@ -77,4 +77,21 @@ header #headerRight #wrapInfoUser{
 header #headerRight #headerRightWrapperIcone{
   height: 100%;
   width: 20%;
+}
+/*header::after {
+  content:"";
+  display: table;
+  clear: both;
+}*/
+aside, main {
+  height: 92vh;
+}
+aside {
+  float: left;
+  width: 30%;
+  background-color: red;
+}
+main {
+  width: 100%;
+  background-color: orange;
 }
