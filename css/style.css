@@ -78,20 +78,56 @@ header #headerRight #headerRightWrapperIcone{
   height: 100%;
   width: 20%;
 }
-/*header::after {
-  content:"";
-  display: table;
-  clear: both;
-}*/
+#containerChat {
+  display: flex;
+  width: 100%;
+}
 aside, main {
   height: 92vh;
 }
 aside {
-  float: left;
   width: 30%;
   background-color: red;
 }
-main {
+aside #searchBox {
+  padding: 10px;
+  background-color: rgb(246, 246, 246);
+}
+aside #searchBox {
+  position: relative;
+}
+aside #searchBox input{
   width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid rgb(249, 249, 249);
+  color: red;
+  padding-left: 60px;
+  font-size: 15px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers (Safari, Google Chrome, Opera 15+) */
+  color: lightgrey;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: lightgrey;
+  opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: lightgrey;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: lightgrey;
+}
+
+#searchBox span {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  color: lightgrey;
+}
+main {
+  width: 70%;
   background-color: orange;
 }
