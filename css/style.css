@@ -186,3 +186,13 @@ main {
   width: 70%;
   background-color: orange;
 }
+main #zonaChat {
+  height: 82vh;
+  width: 100%;
+  background-color: blue;
+}
+main #rispBox {
+  height: 10vh;
+  width: 100%;
+  background-color: green;
+}
