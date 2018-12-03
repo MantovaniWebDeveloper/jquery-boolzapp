@@ -2,5 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica Neue; 
+  font-family: Helvetica Neue;
+}
+.containerGenerale {
+  width: 100%;
+  background-color: yellow;
+  height: 100vh;
+}
+header {
+  background-color: red;
+  height: 60px;
+  width: 100%;
+}
+header > div {
+  float: left;
+}
+header #headerLeft {
+  background-color: orange;
+  height: 100%;
+  width: 40%;
+
+}
+header #headerRight {
+  background-color: green;
+  height: 100%;
+  width: 60%;
 }
