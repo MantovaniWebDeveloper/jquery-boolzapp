@@ -24,11 +24,11 @@ header #headerLeft {
   height: 100%;
   width: 30%;
 }
-header #headerLeft #headerImgProfilo{
+.headerImgProfilo{
   height: 100%;
-  width: 30%;
+  width: 10%;
 }
-#headerImgProfilo img {
+.headerImgProfilo img {
   height: 40px;
   margin-top: 10px;
   margin-left: 10px;
@@ -36,13 +36,12 @@ header #headerLeft #headerImgProfilo{
 }
 header #headerLeft #headerWrapperIcone{
   height: 100%;
-  width: 70%;
+  width: 90%;
 }
 #headerWrapperIcone {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 5px;
 }
 .spanWrap span{
   font-size: 18px;
@@ -50,7 +49,18 @@ header #headerLeft #headerWrapperIcone{
   color: grey;
 }
 header #headerRight {
+  display: flex;
   background-color: green;
   height: 100%;
   width: 70%;
+}
+header #headerRight #wrapInfoUser{
+  height: 100%;
+  width: 70%;
+  background-color: red;
+}
+header #headerRight #headerRightWrapperIcone{
+  height: 100%;
+  width: 20%;
+  background-color: blue;
 }
