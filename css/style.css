@@ -7,11 +7,12 @@
 #containerGenerale {
   width: 100%;
   background-color: yellow;
-  height: 100vh;
+  height: 100%;
+  overflow: hidden;
 }
 header {
   background-color: red;
-  height: 8vh;
+  height: 60px;
   width: 100%;
 }
 header > div {
@@ -80,6 +81,7 @@ header #headerRight #headerRightWrapperIcone{
 #containerChat {
   display: flex;
   width: 100%;
+  height: 90%;
 }
 aside, main {
   height: 92vh;
@@ -90,6 +92,7 @@ aside {
 }
 aside #searchBox {
   padding: 10px;
+  height: 60px;
   background-color: rgb(246, 246, 246);
 }
 aside #searchBox {
@@ -97,7 +100,7 @@ aside #searchBox {
 }
 aside #searchBox input{
   width: 100%;
-  height: 4vh;
+  height: 40px;
   border-radius: 5px;
   border: 1px solid rgb(249, 249, 249);
   color: lightgrey;
@@ -126,10 +129,8 @@ aside #searchBox input{
 }
 aside #wrapLastChatBox {
   overflow-y: auto;
-  display: flex;
-  flex-direction: column;
   background-color: green;
-  height: 85.6vh;
+  height: calc(100% - 60px);
   width: 100%;
 }
 aside #wrapLastChatBox .chatBox {
@@ -141,43 +142,34 @@ aside #wrapLastChatBox .chatBox {
   border-bottom : 1px solid lightgrey;
 }
 aside .imgChatUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20%;
 }
-aside .infoChat {
-  margin-top: 15px;
-  width: 60%;
-}
-aside .infoChat h2 {
-  font-size: 17px;
-  text-transform: capitalize;
-  color: #000;
-}
-aside .infoChat .wrapPlus {
+aside .textChatBoxUser {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
 }
-.wrapPlus span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 12px;
-  color: grey;
+aside .textChatBoxUser h2 {
+  font-size: 18px;
+  font-weight:300;
 }
-aside .infoChat p{
-  color: grey;
+aside .textChatBoxUser small {
   font-size: 14px;
-  text-transform: capitalize;
-  margin-left: 20px;
-}
-aside .orarioChat {
-  margin-top: 10px;
-  width: 20%;
   color: lightgrey;
-  text-align: right;
+}
+aside .textChatBoxUser .ora {
+  position: absolute;
+  top: 24px;
+  right:0 ;
 }
 .imgChatUser img {
-  height: 50px;
-  margin-top: 5px;
-  margin-left: 5px;
+  height: 60px;
   border-radius: 100px;
   border: 1px solid lightgrey;
   cursor: pointer;
@@ -190,6 +182,7 @@ main #zonaChat {
   height: 82vh;
   width: 100%;
   background-color: lightgrey;
+  padding: 20px;
 }
 main #rispBox {
   display: flex;
@@ -223,7 +216,7 @@ main #rispBox input {
   background-color: rgb(102, 227, 43);
   color: #000;
   font-size: 12px;
-  width: 40%;
+  max-width: 50%;
   height: auto;
   margin-top: 20px;
   margin-right: 20px;
@@ -242,7 +235,7 @@ main #rispBox input {
   background-color: #fff;
   color: #000;
   font-size: 12px;
-  width: 40%;
+  max-width: 50%;
   height: auto;
   margin-top: 20px;
   margin-left: 20px;

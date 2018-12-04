@@ -3,9 +3,6 @@ var inputElemento = $('#rispInput');
 var template = $('.wrapMessInviato');
 var messInviato = $('.messaggioInviato');
 template.hide();
-
-
-
 inputElemento.keypress(function(e) {
     if(e.which == 13) {
       //Recuperare ora per il messaggio inviato
