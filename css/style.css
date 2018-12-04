@@ -66,7 +66,8 @@ header #headerRight #wrapInfoUser{
   width: 70%;
 }
 #wrapInfoUser h2 {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 300;
   text-transform: capitalize;
 }
 #wrapInfoUser h4 {
@@ -190,26 +191,39 @@ main #zonaChat {
 }
 main #rispBox {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 10vh;
   width: 100%;
   background-color: rgb(226, 226, 226);
 }
-main #rispBox span {
+main #rispBox #emoji {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  padding-left: 15px;
+  font-size: 30px;
   color: grey;
-  font-size: 25px;
-  cursor: pointer;
-  margin-left: 20px;
-  margin-right: 20px;
+}
+main #rispBox #wrapInput {
+  display: flex;
+  align-items: center;
+  width: 80%;
 }
 main #rispBox input {
-  width: 80%;
+  width: 100%;
   height: 40px;
   border-radius: 50px;
   border: 1px solid #fff;
   padding-left: 10px;
   font-size: 15px;
+}
+main #rispBox #microfono {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 10%;
+  padding-right: 15px;
+  font-size: 30px;
+  color: grey;
 }
 .wrapMessInviato {
   display: flex;
