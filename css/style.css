@@ -188,6 +188,7 @@ main #zonaChat {
   width: 100%;
   background: url("../assets/mine.jpg");
   padding: 20px;
+  overflow-y: auto;
 }
 main #rispBox {
   display: flex;
@@ -226,31 +227,28 @@ main #rispBox #microfono {
   color: grey;
 }
 .template {
-  display: none;
-}
-.wrapMessInviato {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  /*display: block;*/
 }
 .messaggioInviato {
-  background-color: rgb(102, 227, 43);
+  background-color: #dbf8c5;
   color: #000;
-  font-size: 12px;
+  font-size: 14px;
   max-width: 50%;
   height: auto;
   margin-top: 20px;
   margin-right: 20px;
   padding: 10px;
   border-radius: 10px;
+  float: right;
+}
+.clear {
+  content: "";
+  display: table;
+  clear: both;
 }
 .timeStamp {
   text-align: right;
   color: grey;
-}
-.wrapMessRicevuto {
-  display: flex;
-  justify-content: flex-start;
 }
 .messaggioRicevuto {
   background-color: #fff;
