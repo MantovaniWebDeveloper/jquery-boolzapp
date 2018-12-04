@@ -140,6 +140,10 @@ aside #wrapLastChatBox .chatBox {
   height: 100px;
   width: 100%;
   border-bottom : 1px solid lightgrey;
+  cursor: pointer;
+}
+aside #wrapLastChatBox .chatBox:hover {
+  background-color: rgb(246, 246, 246);
 }
 aside .imgChatUser {
   display: flex;
