@@ -1,8 +1,7 @@
 //genero l'evento per attivare il tasto enter da tastiera
 var inputElemento = $('#rispInput');
-var template = $('.wrapMessInviato');
-var messInviato = $('.messaggioInviato');
-template.hide();
+var template = $('.template .rigaMessaggioInviato ');
+var clear = $('.clear');
 inputElemento.keypress(function(e) {
     if(e.which == 13) {
       //Recuperare ora per il messaggio inviato
@@ -14,8 +13,6 @@ inputElemento.keypress(function(e) {
       var timeStamp = ora + ":" + minuti;
       console.log(timeStamp);
       //nascono i div che saranno clonati
-      template.show();
-      messInviato.hide();
       //  alert('sono vivo');
       //recupero il valore da input box scrivi messaggio
       var messagioRecuperato = inputElemento.val();
@@ -24,10 +21,10 @@ inputElemento.keypress(function(e) {
       // e lo clono
      var messIniviatoClone = template.clone();
      messIniviatoClone.children('.messaggioInviato').show().children('.testo').show().text(messagioRecuperato);
-     messIniviatoClone.children('.messaggioInviato').show().children('.timeStamp').show().html(timeStamp);
      //lo stampo nella zona chat
 
       $('#zonaChat').append(messIniviatoClone);
+
 
     }
 });

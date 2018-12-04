@@ -227,7 +227,11 @@ main #rispBox #microfono {
   color: grey;
 }
 .template {
-  /*display: block;*/
+  display: block;
+}
+.rigaMessaggioInviato {
+  display: flex;
+  justify-content: flex-end;
 }
 .messaggioInviato {
   background-color: #dbf8c5;
@@ -239,16 +243,14 @@ main #rispBox #microfono {
   margin-right: 20px;
   padding: 10px;
   border-radius: 10px;
-  float: right;
-}
-.clear {
-  content: "";
-  display: table;
-  clear: both;
 }
 .timeStamp {
   text-align: right;
   color: grey;
+}
+.rigaMessaggioRicevuto {
+  display: flex;
+  justify-content: flex-start;
 }
 .messaggioRicevuto {
   background-color: #fff;
