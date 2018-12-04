@@ -230,6 +230,10 @@ main #rispBox input {
   padding: 10px;
   border-radius: 10px;
 }
+.timeStamp {
+  text-align: right;
+  color: grey;
+}
 .wrapMessRicevuto {
   display: flex;
   justify-content: flex-start;

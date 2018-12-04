@@ -26,9 +26,10 @@ inputElemento.keypress(function(e) {
       //recupero il nodo per il messaggio inviato
       // e lo clono
      var messIniviatoClone = template.clone();
-     var messInviatoConTesto = messIniviatoClone.children('.messaggioInviato').show().text(messagioRecuperato);
-     var messInviatoConTestoOra = messInviatoConTesto.children('.timeStamp').text(timeStamp);
+     messIniviatoClone.children('.messaggioInviato').show().children('.testo').show().text(messagioRecuperato);
+     messIniviatoClone.children('.messaggioInviato').show().children('.timeStamp').show().html(timeStamp);
      //lo stampo nella zona chat
+
       $('#zonaChat').append(messIniviatoClone);
 
     }
