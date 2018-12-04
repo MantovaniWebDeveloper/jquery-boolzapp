@@ -4,8 +4,18 @@ var template = $('.wrapMessInviato');
 var messInviato = $('.messaggioInviato');
 template.hide();
 
+
+
 inputElemento.keypress(function(e) {
     if(e.which == 13) {
+      //Recuperare ora per il messaggio inviato
+      var data = new Date();
+      var ora = data.getHours();
+      var minuti = data.getMinutes();
+      console.log(ora + " : " + minuti);
+      //variabilizzo il timeStamp
+      var timeStamp = ora + ":" + minuti;
+      console.log(timeStamp);
       //nascono i div che saranno clonati
       template.show();
       messInviato.hide();
@@ -16,7 +26,8 @@ inputElemento.keypress(function(e) {
       //recupero il nodo per il messaggio inviato
       // e lo clono
      var messIniviatoClone = template.clone();
-     messIniviatoClone.children('.messaggioInviato').show().text(messagioRecuperato);
+     var messInviatoConTesto = messIniviatoClone.children('.messaggioInviato').show().text(messagioRecuperato);
+     var messInviatoConTestoOra = messInviatoConTesto.children('.timeStamp').text(timeStamp);
      //lo stampo nella zona chat
       $('#zonaChat').append(messIniviatoClone);
 
