@@ -1,5 +1,7 @@
 //genero l'evento per attivare il tasto enter da tastiera
 var inputElemento = $('#rispInput');
+var template = $('.wrapMessInviato');
+var messInviato = $('.messaggioInviato');
 inputElemento.keypress(function(e) {
     if(e.which == 13) {
       //  alert('sono vivo');
@@ -8,13 +10,9 @@ inputElemento.keypress(function(e) {
       console.log(messagioRecuperato);
       //recupero il nodo per il messaggio inviato
       // e lo clono
-      $('.messaggioInviato').css('display','block');
-      var messIniviatoClone = $('.wrapMessInviato .messaggioInviato').clone();
+     var messIniviatoClone = template.clone();
 
-      console.log(messIniviatoClone);
-      //gli allego il messaggio recuperato dal utento
-      messIniviatoClone.text(messagioRecuperato);
-      console.log(messIniviatoClone)
+     messIniviatoClone.children('.messaggioInviato').text(messagioRecuperato);
 
       $('#zonaChat').append(messIniviatoClone);
     }
