@@ -186,7 +186,7 @@ main {
 main #zonaChat {
   height: 82vh;
   width: 100%;
-  background-color: lightgrey;
+  background: url("../assets/mine.jpg");
   padding: 20px;
 }
 main #rispBox {
@@ -224,6 +224,9 @@ main #rispBox #microfono {
   padding-right: 15px;
   font-size: 30px;
   color: grey;
+}
+.template {
+  display: none;
 }
 .wrapMessInviato {
   display: flex;
