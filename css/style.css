@@ -227,7 +227,7 @@ main #rispBox #microfono {
   color: grey;
 }
 .template {
-  display: block;
+  display: none;
 }
 .rigaMessaggioInviato {
   display: flex;
@@ -236,7 +236,7 @@ main #rispBox #microfono {
 .messaggioInviato {
   background-color: #dbf8c5;
   color: #000;
-  font-size: 14px;
+  font-size: 18px;
   max-width: 50%;
   height: auto;
   margin-top: 20px;
@@ -247,6 +247,8 @@ main #rispBox #microfono {
 .timeStamp {
   text-align: right;
   color: grey;
+  font-size: 13px;
+  margin-top: 5px;
 }
 .rigaMessaggioRicevuto {
   display: flex;
