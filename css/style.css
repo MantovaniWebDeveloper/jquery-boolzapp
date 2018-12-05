@@ -265,3 +265,7 @@ main #rispBox #microfono {
   padding: 10px;
   border-radius: 10px;
 }
+#unoMemorizzato,
+#dueMemorizzato {
+  display: none;
+}

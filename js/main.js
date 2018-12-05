@@ -75,18 +75,18 @@ $(document).ready(function() {
   });
 
   //SEZIONE GESTIONE Click sul contatto mostra la conversazione del contatto cliccato
-  //OGGETTO CONVERSAZIONI
-  var frasiConversazioni = ["Ciao","sei un figo","come va?","certamente"];
-  $(document).on('click','.chatBox', function(){
-    console.log($(this).children('.textChatBoxUser').children('h2').text());
+  $('.chatBox').click(function(){
+    var nomeContattoChat = $(this).children('.textChatBoxUser').children('h2').text()
+    console.log(nomeContattoChat);
 
-    var messagioRecuperato = frasiConversazioni[2];
-
-    var messIniviatoClone = templateInviato.clone();
-
-    messIniviatoClone.children('.messaggioInviato').show().children('.testo').show().text(messagioRecuperato);
-    $('#zonaChat').append(messIniviatoClone);
-
+    if(nomeContattoChat.includes("fernando")){
+      $('#unoMemorizzato').show();
+      $('#unoMemorizzato').next().hide();
+    }
+    else if (nomeContattoChat.includes("max")) {
+      $('#dueMemorizzato').prev().hide();
+      $('#dueMemorizzato').show();
+    }
   });
 
 });
