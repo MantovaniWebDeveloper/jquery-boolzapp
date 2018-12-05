@@ -51,7 +51,25 @@ $(document).ready(function() {
 
   //sezione gestione ricerca contatto
   cercaContattoInput.keypress(function(e) {
-    if(e.which == 13) {
+      //decodifico il codice della tastiera
+      var carattereCercato = String.fromCharCode(e.keyCode).toUpperCase();
+      console.log(carattereCercato);
+      //CICLO SUI NOMI
+      var i = 0;
+      contattoBox.each(function(){
+        console.log("giro: " + i);
+        var nomeContatto = $(this).text().charAt();
+        console.log(nomeContatto);
+        //CONFRONTO IL CARATTERE
+        if(nomeContatto == carattereCercato) {
+          console.log("ok");
+        }
+        else {
+          console.log("no");
+        }
+        i++;
+      });
+  /*  if(e.which == 13) {
       //alert("invio cerca");
       var contattoRichiesto = cercaContattoInput.val();
       console.log("nome contatto cercato è: " + contattoRichiesto);
@@ -59,13 +77,8 @@ $(document).ready(function() {
       //textChatBoxUser
       contattoBox.each(function(){
         console.log($(this).text());
-        if (contattoRichiesto != $(this).text() ) {
-          $(this).hide();
-        }
-        else {
-          $(this).show();
-        }
-      });
-    }
+
+      })
+    }*/
   });
 });
