@@ -130,7 +130,7 @@ aside #searchBox input{
 }
 aside #wrapLastChatBox {
   overflow-y: auto;
-  background-color: green;
+  background-color: rgb(246, 246, 246);
   height: calc(100% - 60px);
   width: 100%;
 }
