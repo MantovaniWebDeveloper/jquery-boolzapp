@@ -52,6 +52,7 @@ $(document).ready(function() {
   //sezione gestione ricerca contatto
   cercaContattoInput.keypress(function(e) {
       //decodifico il codice della tastiera
+
       var carattereCercato = String.fromCharCode(e.keyCode);
       console.log(carattereCercato);
       //CICLO SUI NOMI
@@ -63,22 +64,11 @@ $(document).ready(function() {
         console.log(nomeContatto);
           if(nomeContatto.indexOf(carattereCercato) != -1) {
             console.log("trovato: " + carattereCercato );
+            $(this).css("color","green");
           }
           else {
             $(this).hide();
           }
-          /*if (nomeContatto[i].includes(carattereCercato)) {
-            console.log("trovato");
-          }
-          else {
-            console.log("non trovato");
-          }*/
-
-
-         //console.log(charTrovati);
-
-        //CONFRONTO IL CARATTERE
-
         i++;
       });
       console.log("NUOVA RICERCA!!")
