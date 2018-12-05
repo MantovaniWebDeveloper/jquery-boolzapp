@@ -50,35 +50,34 @@ $(document).ready(function() {
   });
 
   //sezione gestione ricerca contatto
-  cercaContattoInput.keypress(function(e) {
+  cercaContattoInput.keydown(function(e) {
       //decodifico il codice della tastiera
       var carattereCercato = String.fromCharCode(e.keyCode).toUpperCase();
       console.log(carattereCercato);
       //CICLO SUI NOMI
       var i = 0;
+      var charTrovati = [];
       contattoBox.each(function(){
         console.log("giro: " + i);
-        var nomeContatto = $(this).text().charAt();
+        var nomeContatto = $(this).text().split("");
         console.log(nomeContatto);
+        for (var i = 0; i < nomeContatto.length; i++) {
+          console.log(nomeContatto[i]);
+          if(nomeContatto[i] == carattereCercato) {
+            console.log("trovato: " +carattereCercato );
+          }
+          /*if (nomeContatto[i].includes(carattereCercato)) {
+            console.log("trovato");
+          }
+          else {
+            console.log("non trovato");
+          }*/
+         }
+         //console.log(charTrovati);
+
         //CONFRONTO IL CARATTERE
-        if(nomeContatto == carattereCercato) {
-          console.log("ok");
-        }
-        else {
-          console.log("no");
-        }
+
         i++;
       });
-  /*  if(e.which == 13) {
-      //alert("invio cerca");
-      var contattoRichiesto = cercaContattoInput.val();
-      console.log("nome contatto cercato è: " + contattoRichiesto);
-      //ciclo per recuperari tutti i contatti con classe
-      //textChatBoxUser
-      contattoBox.each(function(){
-        console.log($(this).text());
-
-      })
-    }*/
   });
 });
