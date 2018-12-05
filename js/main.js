@@ -59,10 +59,13 @@ $(document).ready(function() {
       var charTrovati = [];
       contattoBox.each(function(){
         console.log("giro: " + i);
-        var nomeContatto = $(this).text().split("");
+        var nomeContatto = $(this).text();
         console.log(nomeContatto);
           if(nomeContatto.indexOf(carattereCercato) != -1) {
             console.log("trovato: " + carattereCercato );
+          }
+          else {
+            $(this).hide();
           }
           /*if (nomeContatto[i].includes(carattereCercato)) {
             console.log("trovato");
@@ -79,6 +82,7 @@ $(document).ready(function() {
         i++;
       });
       console.log("NUOVA RICERCA!!")
+
 
   });
 });
