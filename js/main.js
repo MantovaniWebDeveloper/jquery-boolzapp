@@ -50,21 +50,21 @@ $(document).ready(function() {
   });
 
   //sezione gestione ricerca contatto
-  cercaContattoInput.keypress(function(e) {
+  cercaContattoInput.keyup(function() {
       //decodifico il codice della tastiera
 
-      var carattereCercato = String.fromCharCode(e.keyCode);
-      console.log(carattereCercato);
+      var carattereCercato = $(this).val();
       //CICLO SUI NOMI
       var i = 0;
       var charTrovati = [];
       contattoBox.each(function(){
         console.log("giro: " + i);
-        var nomeContatto = $(this).text();
+        var nomeContatto = $(this).children('.textChatBoxUser').children('h2').text();
         console.log(nomeContatto);
           if(nomeContatto.indexOf(carattereCercato) != -1) {
             console.log("trovato: " + carattereCercato );
             $(this).css("color","green");
+            $(this).show();
           }
           else {
             $(this).hide();
@@ -72,7 +72,21 @@ $(document).ready(function() {
         i++;
       });
       console.log("NUOVA RICERCA!!")
+  });
 
+  //SEZIONE GESTIONE Click sul contatto mostra la conversazione del contatto cliccato
+  //OGGETTO CONVERSAZIONI
+  var frasiConversazioni = ["Ciao","sei un figo","come va?","certamente"];
+  $(document).on('click','.chatBox', function(){
+    console.log($(this).children('.textChatBoxUser').children('h2').text());
+
+    var messagioRecuperato = frasiConversazioni[2];
+
+    var messIniviatoClone = templateInviato.clone();
+
+    messIniviatoClone.children('.messaggioInviato').show().children('.testo').show().text(messagioRecuperato);
+    $('#zonaChat').append(messIniviatoClone);
 
   });
+
 });
