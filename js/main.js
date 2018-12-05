@@ -2,7 +2,7 @@
 var inputElemento = $('#rispInput');
 var templateInviato = $('.template .rigaMessaggioInviato ');
 var cercaContattoInput = $('#cercaContatto');
-var contattoBox = $('.chatBox .textChatBoxUser h2');
+var contattoBox = $('.chatBox');
 
 $(document).ready(function() {
     inputElemento.keypress(function(e) {
