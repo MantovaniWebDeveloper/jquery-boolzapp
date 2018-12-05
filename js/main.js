@@ -50,9 +50,9 @@ $(document).ready(function() {
   });
 
   //sezione gestione ricerca contatto
-  cercaContattoInput.keydown(function(e) {
+  cercaContattoInput.keypress(function(e) {
       //decodifico il codice della tastiera
-      var carattereCercato = String.fromCharCode(e.keyCode).toUpperCase();
+      var carattereCercato = String.fromCharCode(e.keyCode);
       console.log(carattereCercato);
       //CICLO SUI NOMI
       var i = 0;
@@ -61,10 +61,8 @@ $(document).ready(function() {
         console.log("giro: " + i);
         var nomeContatto = $(this).text().split("");
         console.log(nomeContatto);
-        for (var i = 0; i < nomeContatto.length; i++) {
-          console.log(nomeContatto[i]);
-          if(nomeContatto[i] == carattereCercato) {
-            console.log("trovato: " +carattereCercato );
+          if(nomeContatto.indexOf(carattereCercato) != -1) {
+            console.log("trovato: " + carattereCercato );
           }
           /*if (nomeContatto[i].includes(carattereCercato)) {
             console.log("trovato");
@@ -72,12 +70,15 @@ $(document).ready(function() {
           else {
             console.log("non trovato");
           }*/
-         }
+
+
          //console.log(charTrovati);
 
         //CONFRONTO IL CARATTERE
 
         i++;
       });
+      console.log("NUOVA RICERCA!!")
+
   });
 });
