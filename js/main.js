@@ -95,7 +95,9 @@ $(document).ready(function() {
     console.log(event.target);
     var focus = $(event.target);
     if(focus.hasClass("messaggioInviato") || focus.hasClass("testo") || focus.hasClass("messaggioRicevuto")){
-      alert("ok");
+
+     $('.menuCLick').show();
+
     }
   });
 

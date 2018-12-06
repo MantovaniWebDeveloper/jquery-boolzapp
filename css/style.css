@@ -269,3 +269,15 @@ main #rispBox #microfono {
 #dueMemorizzato {
   display: none;
 }
+.menuCLick {
+  display: none;
+  background-color: rgb(246, 246, 246);
+  color: grey;
+  width: 300px;
+  border-radius: 3px;
+}
+.menuCLick div {
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
