@@ -245,6 +245,15 @@ main #rispBox #microfono {
   padding: 10px;
   border-radius: 10px;
 }
+.messaggioInviato .testo {
+  display: inline;
+  margin-right: 30px;
+}
+.messaggioInviato span {
+  display: inline;
+  color: grey;
+  cursor: pointer;
+}
 .timeStamp {
   text-align: right;
   color: grey;
