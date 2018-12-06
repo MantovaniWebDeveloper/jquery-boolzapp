@@ -250,7 +250,7 @@ main #rispBox #microfono {
   margin-right: 30px;
 }
 .messaggioInviato span {
-  display: inline;
+  display: none;
   color: grey;
   cursor: pointer;
 }

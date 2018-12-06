@@ -89,6 +89,12 @@ $(document).ready(function() {
     }
   });
 
+  $(".messaggioInviato").mouseover(function(){
+    $(".messaggioInviato span").show();
+  });
+  $(".messaggioInviato").mouseout(function(){
+    $(".messaggioInviato span").hide();
+  });
   //SEZIONE CLIC SUL MESSAGGIO
 
   $(document).on('click',function(event){
