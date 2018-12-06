@@ -100,7 +100,7 @@ $(document).ready(function() {
   $(document).on('click',function(event){
     console.log(event.target);
     var focus = $(event.target);
-    if(focus.hasClass("messaggioInviato")){
+    if(focus.hasClass("fas fa-angle-down")){
 
      $('.menu1').show();
 
