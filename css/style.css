@@ -155,6 +155,12 @@ aside .imgChatUser {
 .active {
   background-color: rgb(119, 119, 119);
 }
+#containerChatTuttiContatti .messaggioInviato {
+  display: none;
+}
+#containerChatTuttiContatti .activeRm {
+  display: block;
+}
 aside .textChatBoxUser {
   position: relative;
   display: flex;

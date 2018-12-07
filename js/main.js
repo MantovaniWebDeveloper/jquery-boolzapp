@@ -74,6 +74,7 @@ $(document).ready(function() {
   });
 
   //SEZIONE GESTIONE Click sul contatto mostra la conversazione del contatto cliccato
+  //recupero il click sul contatto rimuovendo e aggiungendo la classe active
   contattoBox.click(function(){
     contattoBox.removeClass("active");
     $(this).addClass("active");
