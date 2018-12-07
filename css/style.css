@@ -137,20 +137,23 @@ aside #wrapLastChatBox {
 aside #wrapLastChatBox .chatBox {
   display: flex;
   padding: 10px;
-  background-color: #fff;
+  /*background-color: #fff;*/
   height: 100px;
   width: 100%;
   border-bottom : 1px solid lightgrey;
   cursor: pointer;
 }
 aside #wrapLastChatBox .chatBox:hover {
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(119, 119, 119);
 }
 aside .imgChatUser {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20%;
+}
+.active {
+  background-color: rgb(119, 119, 119);
 }
 aside .textChatBoxUser {
   position: relative;
