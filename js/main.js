@@ -56,7 +56,6 @@ $(document).ready(function() {
       var carattereCercato = $(this).val();
       //CICLO SUI NOMI
       var i = 0;
-      var charTrovati = [];
       contattoBox.each(function(){
         console.log("giro: " + i);
         var nomeContatto = $(this).children('.textChatBoxUser').children('h2').text();
@@ -75,36 +74,9 @@ $(document).ready(function() {
   });
 
   //SEZIONE GESTIONE Click sul contatto mostra la conversazione del contatto cliccato
-  $('.chatBox').click(function(){
-    var nomeContattoChat = $(this).children('.textChatBoxUser').children('h2').text()
-    console.log(nomeContattoChat);
-
-    if(nomeContattoChat.includes("fernando")){
-      $('#unoMemorizzato').show();
-      $('#unoMemorizzato').next().hide();
-    }
-    else if (nomeContattoChat.includes("max")) {
-      $('#dueMemorizzato').prev().hide();
-      $('#dueMemorizzato').show();
-    }
-  });
-
-  $(".messaggioInviato").mouseover(function(){
-    $(".messaggioInviato span").show();
-  });
-  $(".messaggioInviato").mouseout(function(){
-    $(".messaggioInviato span").hide();
-  });
-  //SEZIONE CLIC SUL MESSAGGIO
-
-  $(document).on('click',function(event){
-    console.log(event.target);
-    var focus = $(event.target);
-    if(focus.hasClass("fas fa-angle-down")){
-
-     $('.menu1').show();
-
-    }
+  contattoBox.click(function(){
+    contattoBox.removeClass("active");
+    $(this).addClass("active");
   });
 
 });
