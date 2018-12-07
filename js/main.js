@@ -88,6 +88,15 @@ $(document).ready(function() {
     console.log(messaggioInviato);
 
     messaggioInviato.eq(indexContatto).addClass("activeRm");
+
+    var data = new Date();
+    var ora = data.getHours();
+    var minuti = data.getMinutes();
+    console.log(ora + " : " + minuti);
+    //variabilizzo il timeStamp
+    var timeStamp = ora + ":" + minuti;
+    $(".rigaMessaggioInviato").children('.messaggioInviato').children('.timeStamp').text(timeStamp);
+
   });
 
 });
