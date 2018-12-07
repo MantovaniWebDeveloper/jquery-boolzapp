@@ -3,6 +3,7 @@ var inputElemento = $('#rispInput');
 var templateInviato = $('.template .rigaMessaggioInviato ');
 var cercaContattoInput = $('#cercaContatto');
 var contattoBox = $('.chatBox');
+var messaggioInviato = $('.messaggioInviato');
 
 $(document).ready(function() {
     inputElemento.keypress(function(e) {
@@ -78,6 +79,15 @@ $(document).ready(function() {
   contattoBox.click(function(){
     contattoBox.removeClass("active");
     $(this).addClass("active");
+
+    //ora rimuovo le classi activeRm dai messaggi
+    messaggioInviato.removeClass("activeRm");
+    //recupero indice del contatto con il metodo index() (la posizione)
+    var indexContatto = $(this).index();
+    console.log(indexContatto);
+    console.log(messaggioInviato);
+
+    messaggioInviato.eq(indexContatto).addClass("activeRm");
   });
 
 });
